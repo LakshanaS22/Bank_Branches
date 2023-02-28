@@ -27,7 +27,7 @@ export default async function branch(req, res) {
             .from('Bank')
             .select()
 .or(`branch.ilike.%${req.query.q.toLowerCase()}%`)
-            .order('ifsc',{ascending:true})
+            .order('ifsc',{descending:true})
 .range(parseInt(req.query.offset),parseInt(req.query.offset)+parseInt(req.query.limit)-1)
         res.send(data)
 }
