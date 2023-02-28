@@ -17,5 +17,3 @@ Use get() function from express to get the API and create a query for CASE 1 (/s
 Use get() function from express to get the API and create a query for CASE 2 (/branch/API). Return the rows that responds to the query.
 Run using node or npm start
 Push the project into GITHUB to deploy.
-
-
