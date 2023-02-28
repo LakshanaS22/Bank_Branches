@@ -17,3 +17,15 @@ Use get() function from express to get the API and create a query for CASE 1 (/s
 Use get() function from express to get the API and create a query for CASE 2 (/branch/API). Return the rows that responds to the query.
 Run using node or npm start
 Push the project into GITHUB to deploy.
+
+SCREENSHOTS OF OUTPUT:
+
+Case 1:Search API to return possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset.
+https://bank-branches.vercel.app/api/search?q=Mumbai&limit=2&offset=1
+
+![2023-02-28 (3)](https://user-images.githubusercontent.com/106903132/221871421-950db1bd-b6d5-4d3c-8e39-974713ec8181.png)
+
+Case 2:Branch API to return possible matches based on the branch name ordered by IFSC code (descending order) with limit and offset
+https://bank-branches.vercel.app/api/branch?limit=1&q=LONI&offset=0
+
+![2023-02-28 (2)](https://user-images.githubusercontent.com/106903132/221871702-24773356-fbe4-4b9a-878c-4947633e2f1d.png)
