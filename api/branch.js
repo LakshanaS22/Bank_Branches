@@ -15,14 +15,8 @@ app.use(
 )
 
 export default async function branch(req, res) {
-    // client.query(`Select * from bank_branch where LOWER(branch) like '%${req.query.q.toLowerCase()}%' or lower(address) like '%${req.query.q.toLowerCase()}%' or LOWER(city) like '%${req.query.q.toLowerCase()}%' or LOWER(district) like '%${req.query.q.toLowerCase()}%' or LOWER(states) like '%${req.query.q.toLowerCase()}%' or LOWER(bank_name) like '%${req.query.q.toLowerCase()}%' order by ifsc  limit ${req.query.limit} offset ${req.query.offset}`, (err, result)=>{
-    //     if(!err){
-    //         res.send(result.rows);
-    //     }
-        
-    // });
-    // client.end;
-    console.log("hi")
+   
+    console.log("No error")
         const {data, error} = await supabase
             .from('Bank')
             .select()
@@ -35,21 +29,7 @@ export default async function branch(req, res) {
 
 
 
-// app.get('/api/branch', async(req, res) => {
-//     const {data , error} = await supabase
-//     .from('Bank')
-//     .select()
-//     .or('')
-// })
 
-//      client.query(`Select * from bank_branch where LOWER(branch) ='${req.query.q.toLowerCase()}'order by ifsc desc limit ${req.query.limit} offset ${req.query.offset}`, (err, result)=>{
-//         if(!err){
-//             res.send(result.rows);
-//         }
-        
-//     });
-
-// })
 
 
 
